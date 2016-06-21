@@ -4,7 +4,9 @@ A simple UIPickerView displayed within an UIAlertView in Swift that allows you t
 The current version is based on Swift 2 and iOS 9.
 
 ## Example Usage
-    ExpirationDatePickerView().show("Select Expiration Date", doneButtonTitle: "Done", cancelButtonTitle: "Cancel", defaultMonth: defaultMonth, defaultYear : defaultYear) { (month: Int, year: Int) -> Void in
+    ExpirationDatePickerView().show("Select Expiration Date", doneButtonTitle: "Done", 
+        cancelButtonTitle: "Cancel", defaultMonth: defaultMonth, defaultYear : defaultYear) {
+        (month: Int, year: Int) -> Void in
         let dateString = String(format: "%02d/%d", month, year)
         print(dateString) // 05/2015
     }
